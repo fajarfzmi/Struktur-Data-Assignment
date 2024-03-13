@@ -3,7 +3,21 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+
+Tipe data adalah adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan.
+
+
+### A.Tipe Data Primitif
+Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrograman,compiler dan sistem operasinya
+
+
+### B.Tipe Data Abstrak
+Tipe data abstrak atau yang biasa disebut Abstrak Data Tipe(ADT) merupakan tipe data yang dibentuk oleh programer itu sendiri. Pada tipe data abstrak bisa berisi banyak tipe data, jadi nilainya bisa lebih dari satu dan beragam tipe data. Fitur Class adalah fitur Object Oriented Program(OPP) pada bahasa C++ yang mirip dengan fitur data structures Struct pada bahasa C.
+
+
+### C.Tipe Data Koleksi
+Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur
+
 
 ## Guided 
 
@@ -51,7 +65,7 @@ cout << "Error! operator is not correct";
 return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program C++ di atas adalah sebuah kalkulator sederhana yang meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua bilangan. Setelah menerima input, program akan melakukan operasi aritmatika yang sesuai dan menampilkan hasilnya
 
 ### 2. [Tipe Data Abstrak]
 
@@ -90,7 +104,7 @@ printf("Umur: %d\n", mhs2.age);
 return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas adalah sebuah program dalam bahasa pemrograman C++ yang menggunakan struktur (struct) untuk menyimpan informasi tentang mahasiswa. Program ini digunakan untuk menyimpan dan mencetak informasi tentang dua mahasiswa: nama, alamat, dan umur.
 
 ### 3. [Tipe Data Koleksi]
 
@@ -115,7 +129,7 @@ cout << "Isi array kelima :" << nilai[4] << endl;
 return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas adalah program sederhana dalam bahasa C++ yang menggunakan array untuk menyimpan beberapa nilai integer. Baris pertama mendeklarasikan yang terdiri dari 5 elemen bertipe integer. Jadi, program tersebut hanya mendeklarasikan, menginisialisasi, dan mencetak isi array bertipe integer.
 
 ## Unguided 
 
@@ -148,7 +162,7 @@ cout << "Hasil perkalian 8 x 4 adalah " << kali(m, n);
 #### Output:
 ![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, dan jumlah bit yang dialokasikan untuk setiap tipe data primitif tergantung pada bahasa pemrograman, compiler, dan sistem operasinya.
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
 
@@ -181,7 +195,11 @@ return 0;
 #### Output:
 ![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas merupakan contoh penggunaan struktur (struct) dalam bahasa pemrograman C++. Struktur digunakan untuk menggabungkan beberapa tipe data yang berbeda ke dalam satu kesatuan. Program tersebut akan mencetak informasi mengenai seorang mahasiswa, yang terdiri dari nama, jurusan, dan IPK, sesuai dengan nilai yang telah diinisialisasi sebelumnya dalam program. Program ini menunjukkan bagaimana struktur dapat digunakan untuk mengorganisir dan mengelola data-data yang terkait dalam sebuah kesatuan yang lebih besar.
+
+Fungsi Class dan Struct
+Struct adalah tipe data yang digunakan untuk mengelompokkan beberapa variabel yang mungkin memiliki tipe data yang berbeda ke dalam satu kesatuan.Biasanya digunakan untuk menyimpan data yang terkait secara terorganisir, tetapi tidak menyediakan banyak fitur lainnya.Default akses ke anggota struct adalah public, kecuali diubah secara eksplisit.
+Class adalah struktur data yang lebih kompleks dibandingkan struct. Selain menyimpan data, class juga dapat menyertakan fungsi-fungsi (metode) yang beroperasi pada data tersebut.Class memiliki akses kontrol yang lebih kuat, seperti private, protected, dan public, yang memungkinkan pembatasan akses ke anggota-anggota class.Class menerapkan konsep encapsulation, yang berarti menyembunyikan rincian implementasi dan hanya mengekspos operasi yang diperlukan melalui antarmuka public, Class mendukung konsep inheritance dan polymorphism.
 
 ### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map]
 
@@ -202,10 +220,20 @@ cout << nama_mahasiswa[1] << " " << nama_mahasiswa[5] << " " << nama_mahasiswa[3
 #### Output:
 ![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas adalah contoh penggunaan fungsi map dalam C++ untuk menyimpan data mahasiswa dengan menggunakan nomor identitas (integer) sebagai kunci dan nama mahasiswa (string) sebagai nilai
+
+
+Perbedaan Array dan Map
+Array merupakan struktur data linear yang terdiri dari kumpulan elemen dengan tipe data yang sama, yang disusun secara berurutan di dalam memori. Elemen-elemen dalam array diakses menggunakan indeks numerik yang dimulai dari 0 dan berurutan. Ukuran array harus ditentukan pada saat deklarasi dan tidak dapat diubah selama program berjalan. Elemen-elemen array dapat diakses dan dimodifikasi dengan cepat dengan menggunakan indeks numerik.
+ 
+
+
+
+
+
+Map adalah struktur data asosiatif yang mengaitkan kunci unik dengan nilai tertentu. Setiap kunci dalam map berhubungan dengan satu nilai. Elemen-elemen dalam map diakses berdasarkan kunci, bukan indeks numerik. Map dapat tumbuh dan menyusut secara dinamis sesuai dengan penambahan atau penghapusan elemen. Penyisipan, penghapusan, dan pencarian elemen dalam map memiliki kompleksitas waktu yang lebih tinggi daripada array, tetapi memungkinkan pengelompokan data yang lebih fleksibel.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
-
+Dalam pemrograman, tipe data dapat dikelompokkan menjadi tipe data primitif, tipe data abstrak, dan koleksi. Tipe data primitif adalah tipe data dasar yang disediakan oleh bahasa pemrograman, seperti integer, float, char, dan bool. Tipe data abstrak adalah tipe data yang didefinisikan oleh pengguna atau programer, seperti array, list, stack, queue, dan tree. Sedangkan koleksi adalah kumpulan dari beberapa elemen yang terdiri dari satu atau lebih tipe data, seperti array, vector, set, map, dan hash table.
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
