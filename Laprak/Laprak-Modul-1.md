@@ -160,7 +160,7 @@ cout << "Hasil perkalian 8 x 4 adalah " << kali(m, n);
 
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Fajar_Screenshot-Output-Unguided-1](https://github.com/fajarfzmi/Struktur-Data-Assignment/blob/main/Laprak/Screenshot-Output-Unguided-1.png)
 
 Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, dan jumlah bit yang dialokasikan untuk setiap tipe data primitif tergantung pada bahasa pemrograman, compiler, dan sistem operasinya.
 
@@ -193,8 +193,7 @@ return 0;
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
-
+![Fajar_Screenshot-Output-Unguided-2](https://github.com/fajarfzmi/Struktur-Data-Assignment/blob/main/Laprak/Screenshot-Output-Unguided-2.png)
 Program di atas merupakan contoh penggunaan struktur (struct) dalam bahasa pemrograman C++. Struktur digunakan untuk menggabungkan beberapa tipe data yang berbeda ke dalam satu kesatuan. Program tersebut akan mencetak informasi mengenai seorang mahasiswa, yang terdiri dari nama, jurusan, dan IPK, sesuai dengan nilai yang telah diinisialisasi sebelumnya dalam program. Program ini menunjukkan bagaimana struktur dapat digunakan untuk mengorganisir dan mengelola data-data yang terkait dalam sebuah kesatuan yang lebih besar.
 
 Fungsi Class dan Struct
@@ -218,8 +217,7 @@ cout << nama_mahasiswa[1] << " " << nama_mahasiswa[5] << " " << nama_mahasiswa[3
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
-
+![Fajar_Screenshot-Output-Unguided-3](https://github.com/fajarfzmi/Struktur-Data-Assignment/blob/main/Laprak/Screenshot-Output-Unguided-3.png)
 Program di atas adalah contoh penggunaan fungsi map dalam C++ untuk menyimpan data mahasiswa dengan menggunakan nomor identitas (integer) sebagai kunci dan nama mahasiswa (string) sebagai nilai
 
 
