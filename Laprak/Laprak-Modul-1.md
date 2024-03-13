@@ -7,7 +7,7 @@ Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri ser
 
 ## Guided 
 
-### 1. [Tipe Data Primitif]
+### 1. [Tipe Data Primitif
 
 ```C++
 #include <iostream>
