@@ -6,6 +6,119 @@
 
   ## Dasar Teori 
 
+## 1. GRAF
+
+Graf atau graph adalah struktur data yang digunakan untuk merepresentasikan hubungan antara objek dalam bentuk node atau vertex dan sambungan antara node tersebut dalam bentuk 
+edge atau edge. Graf terdiri dari simpul dan busur yang secara matematis dinyatakan sebagai :
+G = (V, E)
+Dimana G adalah Graph, V adalah simpul atau vertex dan node sebagai titik atau egde dan digambarkan seperti berikut:
+
+
+
+
+Graph juga dapat digunakan dalam berbagai bidang lainnya, seperti analisis jaringan untuk mempelajari pola koneksi dalam sistem kompleks, analisis peringkat dalam mesin pencari untuk menentukan relevansi dan otoritas halaman web. Dengan kemampuannya yang serbaguna, Graph menjadi alat yang sangat berharga dalam memahami dan menganalisis hubungan serta pola yang ada dalam berbagai konteks.
+
+
+## a.	Jenis-jenis Graph
+Graph memiliki berbagai jenis yang umumnya sering digunakan, antara lain:
+ 
+
+
+
+
+1)	Graph berarah (directed graph): Urutan simpul mempunyai arti. Misal busur AB adalah e1 sedangkan busur BA adalah e8.
+
+
+
+
+
+
+
+
+2)	Graph tak berarah (undirected graph): Urutan simpul dalam sebuah busur t idak diperhatikan. Misal busur e1 dapat disebut busur AB atau BA.
+ 
+3)	Weigth Graph : Graph yang mempunyai nilai pada tiap edgenya.
+
+
+## b.	Representasi Graph dengan Matriks
+ 
+
+ 
+Gambar Representasi Graph dengan Matriks
+
+
+Representasi Graph dengan matriks, dikenal sebagai Matriks Adjasi, menggunakan matriks dua dimensi. Representasi Graph menggunakan matriks memiliki kelebihan akses efisien, penghitungan derajat simpul yang cepat, dan kesederhanaan. Namun, kekurangannya adalah penggunaan ruang yang besar, batasan skalabilitas, dan ketidakefisienan untuk Graph yang jarang terhubung. Representasi ini cocok untuk Graph kecil dengan hubungan yang padat, tetapi mungkin tidak efisien untuk Graph besar atau jarang terhubung.
+
+
+## c.	Representasi Graph dengan Linked List
+
+
+
+Dalam membuat representasi Graph dalam bentuk linked list, penting untuk memperhatikan perbedaan antara simpul vertex dan simpul edge. Simpul vertex merujuk pada simpul atau vertex dalam Graph, sedangkan simpul edge merujuk pada busur atau hubungan antar simbol. Meskipun struktur keduanya bisa sama atau berbeda tergantung pada kebutuhan, umumnya disamakan. Akan tetapi, perbedaan
+ 
+
+antara simpul vertex dan simpul edge terletak pada asumsi dan fungsi yang melekat pada masing-masing simpul.
+
+
+
+Gambar Representasi Graph dengan Linked List
+## 2.	Tree atau Pohon
+Dalam ilmu komputer, pohon merupakan struktur data yang umum dan kuat yang menyerupai pohon dalam kehidupan nyata. Struktur pohon terdiri dari kumpulan node yang saling terhubung, di mana setiap node memiliki paling banyak satu simpul induk dan nol atau lebih simpul anak dengan urutan tertentu. Struktur data pohon digunakan untuk menyimpan data secara hierarkis, seperti pohon keluarga, skema pertandingan, dan struktur organisasi. Istilah-istilah yang terkait dengan struktur data pohon meliputi:
+ 
+ 
+
+Binary Tree atau pohon biner merupakan struktur data pohon akan tetapi setiap simpul dalam pohon diprasyaratkan memiliki simpul satu level di bawahnya (child) tidak lebih dari 2 simpul, artinya jumlah child yang diperbolehkan yakni 0, 1, dan 2.
+
+Gambar Struktur Data Binary Tree
+
+
+Untuk membuat struktur data binary tree dalam suatu program (berbahasa C++) dapat menggunakan struct yang memiliki 2 buah pointer, seperti halnya double linked list.
+
+Operasi pada Tree
+a.	Create: digunakan untuk membentuk binary tree baru yang masih kosong.
+b.	Clear: digunakan untuk mengosongkan binary tree yang sudah ada atau menghapus semua node pada binary tree.
+c.	isEmpty: digunakan untuk memeriksa apakah binary tree masih kosong atau tidak.
+d.	Insert: digunakan untuk memasukkan sebuah node kedalam tree.
+e.	Find: digunakan untuk mencari root, parent, left child, atau right child dari suatu node dengan syarat tree tidak boleh kosong.
+f.	Update: digunakan untuk mengubah isi dari node yang ditunjuk oleh pointer current dengan syarat tree tidak boleh kosong.
+ 
+
+g.	Retrive: digunakan untuk mengetahui isi dari node yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+h.	Delete Sub: digunakan untuk menghapus sebuah subtree (node beserta seluruh descendant-nya) yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+i.	Characteristic: digunakan untuk mengetahui karakteristik dari suatu tree. Yakni size, height, serta average lenght-nya.
+j.	Traverse: digunakan untuk mengunjungi seluruh node-node pada tree dengan cara traversal. Terdapat 3 metode traversal yang dibahas dalam modul ini yakni Pre-Order, In-Order, dan Post-Order.
+
+
+## Alur Pre-Order
+
+ 1.  Pre-Order
+Penelusuran secara pre-order memiliki alur:
+a. Cetak data pada simpul root
+b. Secara rekursif mencetak seluruh data pada subpohon kiri
+c. Secara rekursif mencetak seluruh data pada subpohon kanan
+Dapat kita turunkan rumus penelusuran menjadi:
+
+ 
+
+2.	In-Order
+Penelusuran secara in-order memiliki alur:
+a.	Secara rekursif mencetak seluruh data pada subpohon kiri
+b.	Cetak data pada root
+c.	Secara rekursif mencetak seluruh data pada subpohon kanan Dapat kita turunkan rumus penelusuran menjadi:
+
+ 
+
+3.	Post-Order
+Penelusuran secara in-order memiliki alur:
+a.	Secara rekursif mencetak seluruh data pada subpohon kiri
+b.	Secara rekursif mencetak seluruh data pada subpohon kanan
+c.	Cetak data pada root
+Dapat kita turunkan rumus penelusuran menjadi:
+
+
+
+
+
   
 
 ## [GUIDED]  
@@ -567,6 +680,7 @@ int main()
 
 ## DESKRIPSI PROGRAM :
 
+Program ini membantu pengguna dalam membuat dan memvisualisasikan graf berbobot dengan menggunakan matriks ketetanggaan. Program ini juga memberikan output yang terformat dengan rapi untuk memudahkan pengguna memahami struktur graf yang diinputkan.
 
 ## UNGUIDED 2
 
@@ -614,7 +728,7 @@ void buatNode(char data)
     if (isEmpty())
     {
         root = newPohon(data);
-        cout << "\nAlhamdulillah, Node " << data << " berhasil dibuat menjadi root." << endl;
+        cout << "\nSELAMAT YAH, Node " << data << " berhasil dibuat menjadi root." << endl;
     }
     else
     {
@@ -641,7 +755,7 @@ Pohon *insertLeft(char data, Pohon *node)
             Pohon *baru = newPohon(data);
             baru->parent = node;
             node->left = baru;
-            cout << "\nMantapp!! Node " << data << " berhasil ditambahkan ke child kiri " << node->data << endl;
+            cout << "\nGOKIL!! Node " << data << " berhasil ditambahkan ke child kiri " << node->data << endl;
             return baru;
         }
     }
@@ -666,7 +780,7 @@ Pohon *insertRight(char data, Pohon *node)
             Pohon *baru = newPohon(data);
             baru->parent = node;
             node->right = baru;
-            cout << "\nAlhamdulillah!! Node " << data << " berhasil ditambahkan ke child kanan " << node->data << endl;
+            cout << "\nSELAMAT YAH!! Node " << data << " berhasil ditambahkan ke child kanan " << node->data << endl;
             return baru;
         }
     }
@@ -686,7 +800,7 @@ void update(char data, Pohon *node)
         {
             char temp = node->data;
             node->data = data;
-            cout << "\nAlhamdulillah!! Node " << temp << " berhasil diubah menjadi " << data << endl;
+            cout << "\nSELAMAT YAH!! Node " << temp << " berhasil diubah menjadi " << data << endl;
         }
     }
 }
@@ -864,7 +978,7 @@ void deleteSub(Pohon *node)
     {
         deleteTree(node->left);
         deleteTree(node->right);
-        cout << "\nAlhamdulillah!! Node subtree " << node->data << " berhasil dihapus." << endl;
+        cout << "\nSELAMAT YAH!! Node subtree " << node->data << " berhasil dihapus." << endl;
     }
 }
 
@@ -878,7 +992,7 @@ void clear()
     else
     {
         deleteTree(root);
-        cout << "\nAlhamdulillah!! Pohon berhasil dihapus." << endl;
+        cout << "\nSELAMAT YAH!! Pohon berhasil dihapus." << endl;
     }
 }
 
@@ -1185,30 +1299,56 @@ int main()
 
     return 0;
 }
-
 ```
 
 
 Screnshoot OUTPUT :
 
+![Screenshot 2024-05-29 233342](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/fe4d70b1-2b8a-424e-8969-73eff5ff5605)
+
+![Screenshot 2024-05-29 233403](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/c1b54fbe-eb8a-405a-b894-57d9b98a0bbb)
+
+![Screenshot 2024-05-29 233423](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/bf875255-383e-4fde-a5c8-0ccd8f4ea654)
+
+![Screenshot 2024-05-29 233447](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/af2a6c6d-a3fb-490f-befc-9f8f802c5f0f)
+
+![Screenshot 2024-05-29 233505](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/8f9c761d-f8e4-4437-aa0d-3f2cc2a43c7c)
+
+![Screenshot 2024-05-29 233531](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/55178e3f-fda7-47a0-b5d6-83e1f9bf9ca8)
+
+![Screenshot 2024-05-29 233559](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/d7933b5a-4cff-40f9-b8ae-040de13c7dd6)
+
+![Screenshot 2024-05-29 233616](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/e9240afe-64de-45a6-91f8-3850e15eff46)
+
+![Screenshot 2024-05-29 233634](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/d9a5be43-fa8d-4bc1-bebc-7caf9febc6b6)
+
+![Screenshot 2024-05-29 233648](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/e0b78e4b-93c8-4ff1-bc2d-941cebd9f2a7)
+
+![Screenshot 2024-05-29 233702](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/afe3742d-49d0-483d-89a5-93e5475c9f74)
+
+![Screenshot 2024-05-29 233718](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/01821269-792f-4afb-9097-54a7fe706e2a)
+
+![Screenshot 2024-05-29 233739](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/2b1e0f37-e59a-4d46-afca-eaa31b74d5ab)
+
+
+![Screenshot 2024-05-29 233756](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/5835196a-6e5b-492b-8213-b3bf4f779b1b)
 
 
 
 DESKRIPSI PROGRAM :
 
-
-
-
+Program ini memungkinkan pengguna untuk membuat dan memanipulasi struktur pohon biner dengan berbagai operasi seperti penambahan node, penghapusan node, dan penelusuran tree.
 
 KESIMPULAN :
 
-Pencarian (Searching) adalah proses untuk menemukan suatu nilai dalam kumpulan data. Dalam contoh program, kita menggunakan algoritma Sequential Search untuk mencari data dalam array yang tidak terurut, 
-dan Binary Search untuk mencari data dalam array yang sudah terurut. Sequential Search memeriksa setiap elemen secara berurutan, sementara Binary Search membagi data menjadi dua bagian dan
-membandingkan dengan data tengah. Program-program ini membantu dalam mencari keberadaan karakter, menghitung jumlah huruf vokal dalam kalimat, dan menghitung jumlah kemunculan angka dalam array. Pemahaman tentang algoritma
-pencarian dan pemrosesan data menjadi kunci dalam pengembangan perangkat lunak yang efisien dan optimal dalam pengolahan data.
+Program-program di atas, yaitu Program Graf dan Program Pohon, adalah contoh implementasi struktur data graf dan pohon dalam bahasa pemrograman
+C++. Program Graf memungkinkan pengguna untuk membangun graf dengan memasukkan bobot antar simpul, sementara Program Pohon memungkinkan
+pengguna untuk membangun pohon dengan menambahkan simpul. Kedua program tersebut menggunakan konsep dasar seperti map, vector, dan fungsi. Program
+Pohon juga memiliki fitur interaktif yang memungkinkan pengguna untuk memilih menu dan melakukan operasi pada pohon yang dibuat. Dengan menggunakan
+program-program ini, pengguna dapat memahami konsep dan penggunaan struktur data graf dan pohon, serta menerapkannya dalam aplikasi yang lebih kompleks.
+Program-program tersebut memberikan pengguna kontrol penuh untuk membuat dan memanipulasi struktur data graf dan pohon sesuai kebutuhan mereka. Meskipun
+sederhana, program-program ini membantu pengguna mempelajari dan mengimplementasikan struktur data graf dan pohon dalam pemrograman
 
 DAFTAR PUSTAKA :
 
-[1] A Nurhakim - Jurnal SIGMA, 2019 - jurnal.pelitabangsa.ac.id
-
-[2] Y Religia - Pelita Teknologi, 2019 - jurnal.pelitabangsa.ac.id
+[1]  A Zein, ES Eriana - 2022 - repository.unpam.ac.id
