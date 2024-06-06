@@ -4,7 +4,7 @@
 
 
 
-Dasar Teori
+## Dasar Teori
 
 Linked List Circular
 linked list circular adalah variasi dari linked list di mana penunjuk berikutnya dari node terakhir menunjuk kembali ke
@@ -31,7 +31,7 @@ traversing dari awal ke akhir linked list akan berakhir ketika mencapai elemen t
 Ini membuat manipulasi dan pengelolaan data menjadi lebih sederhana dan jelas, namun tidak memungkinkan traversing langsung
 kembali ke elemen pertama setelah mencapai elemen terakhir.[2]
 
-GUIDED 1
+## GUIDED 1
 
 ```C++
 #include <iostream>
@@ -380,7 +380,7 @@ int main()
     return 0;
 }
 ```
-output :
+## output :
 
 ![Screenshot 2024-04-03 225714](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/a5055ceb-e4cd-48fd-9ead-9d6aca7a9dd4)
 
@@ -388,7 +388,7 @@ deskripsi program :
 program ini merupakan contoh implementasi sederhana dari linked list dalam C++, 
 yang mencakup operasi-operasi dasar yang umum digunakan dalam struktur data ini.
 
-GUIDED 2
+## GUIDED 2
 
 ```C++
 #include <iostream>
@@ -692,7 +692,7 @@ int main()
 }
 ```
 
-OUTPUT : 
+## OUTPUT : 
 
 ![Screenshot 2024-04-03 230234](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/7455f6b6-3c1f-4d16-bb01-2cd091f26128)
 
@@ -700,33 +700,32 @@ DESKRIPSI PROGRAM :
 Program tersebut merupakan implementasi dari single linked list circular dalam bahasa pemrograman C++. 
 Linked list circular adalah jenis linked list dimana ujung terakhir dari list terhubung kembali ke ujung pertama, membentuk lingkaran atau cincin.
 
-UNGUIDED 
+## UNGUIDED 
 
-unguided 1
+## unguided 1
 
-```C++
-//fajar farizqi azmi
-//2311102192
-//if-11-e
+```c++
+
+// fajar farizqi azmi
+// 2311102192
+// if-11-e
 
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-// Struktur untuk node linked list
 struct Node
 {
     string nama, nim;
     Node *next;
 };
 
-     Node *head = NULL; // Pointer untuk head linked list
+Node *head = NULL;
 
-// Fungsi untuk menambahkan node baru di awal linked list
+
 void tambahDepan()
 {
-    cout << "\n [[Tambah Depan]]" << endl;
-                
+    cout << "\n [Tambah Depan]" << endl;
     cout << "" << endl;
     string nama, nim;
     cout << "Masukkan Nama: ";
@@ -743,10 +742,10 @@ void tambahDepan()
     cout << "Data telah ditambahkan" << endl;
 }
 
-// Fungsi untuk menambahkan node baru di akhir linked list
+
 void tambahBelakang()
 {
-    cout << "\n [[Tambah Belakang]]" << endl;
+    cout << "\n [Tambah Belakang]" << endl;
     cout << "" << endl;
     string nama, nim;
     cout << "Masukkan Nama: ";
@@ -776,10 +775,10 @@ void tambahBelakang()
     cout << "Data telah ditambahkan" << endl;
 }
 
-// Fungsi untuk menambahkan node baru di tengah linked list
+
 void tambahTengah()
 {
-    cout << "\n [[Tambah Tengah]]" << endl;
+    cout << "\n [Tambah Tengah]" << endl;
     cout << "" << endl;
     string nama, nim;
     int posisi;
@@ -823,10 +822,10 @@ void tambahTengah()
     cout << "Data telah ditambahkan" << endl;
 }
 
-// Fungsi untuk mengubah data node di awal linked list
+
 void ubahDepan()
 {
-    cout << "\n [[Ubah Depan]]" << endl;
+    cout << "\n [Ubah Depan]" << endl;
     cout << "" << endl;
     if (head == NULL)
     {
@@ -847,11 +846,11 @@ void ubahDepan()
     cout << "Data " << nama << " telah diubah" << endl;
 }
 
-// Fungsi untuk mengubah data node di akhir linked list
+
 void ubahBelakang()
 {
     cout << "" << endl;
-    cout << "\n [[Ubah Belakang]]" << endl;
+    cout << "\n [Ubah Belakang]" << endl;
     if (head == NULL)
     {
         cout << "Linked list kosong" << endl;
@@ -877,10 +876,10 @@ void ubahBelakang()
     cout << "Data " << nama << " telah diubah" << endl;
 }
 
-// Fungsi untuk mengubah data node di tengah linked list
+
 void ubahTengah()
 {
-    cout << "\n [[Ubah Tengah]]" << endl;
+    cout << "\n [Ubah Tengah]" << endl;
     cout << "" << endl;
     if (head == NULL)
     {
@@ -922,10 +921,10 @@ void ubahTengah()
     cout << "Data " << nama << " telah diubah" << endl;
 }
 
-// Fungsi untuk menghapus node di awal linked list
+
 void hapusDepan()
 {
-    cout << "\n [[Hapus Depan]]" << endl;
+    cout << "\n [Hapus Depan]" << endl;
     cout << "" << endl;
     if (head == NULL)
     {
@@ -940,10 +939,10 @@ void hapusDepan()
     cout << "Data depan telah dihapus" << endl;
 }
 
-// Fungsi untuk menghapus node di akhir linked list
+
 void hapusBelakang()
 {
-    cout << "\n [[Hapus Belakang]]" << endl;
+    cout << "\n [Hapus Belakang]" << endl;
     cout << "" << endl;
     if (head == NULL)
     {
@@ -973,10 +972,10 @@ void hapusBelakang()
     cout << "Data akhir telah dihapus" << endl;
 }
 
-// Fungsi untuk menghapus node di tengah linked list
+
 void hapusTengah()
 {
-    cout << "\n [[Hapus Tengah]]" << endl;
+    cout << "\n [Hapus Tengah]" << endl;
     cout << "" << endl;
     if (head == NULL)
     {
@@ -1022,7 +1021,7 @@ void hapusTengah()
     cout << "Data ke-" << posisi << " telah dihapus" << endl;
 }
 
-// Fungsi untuk menghapus seluruh data dalam linked list
+
 void hapusSeluruhData()
 {
     Node *temp = head;
@@ -1036,15 +1035,15 @@ void hapusSeluruhData()
     cout << "Seluruh data telah dihapus" << endl;
 }
 
-// Fungsi untuk menampilkan seluruh data dalam linked list
+
 void tampilkanData()
 {
     Node *temp = head;
     cout << "DATA MAHASISWA" << endl;
-    cout << "[[ NAMA "
+    cout << "|| NAMA "
          << "  |  "
          << "NIM"
-         << "\t ]]"
+         << "\t ||"
          << "\n"
          << endl;
     while (temp != NULL)
@@ -1059,22 +1058,26 @@ int main()
     int pilihan;
     do
     {
-        cout << "\n[[PROGAM SINGLE LINKED LIST NON-CIRCULAR]]"
+        cout << "\n||PROGAM SINGLE LINKED LIST NON-CIRCULAR||"
              << "\n"
              << endl;
-        cout << "Tampilan Menu:" << endl;
-        cout << "1. Tambah Depan" << endl;
-        cout << "2. Tambah Belakang" << endl;
-        cout << "3. Tambah Tengah" << endl;
-        cout << "4. Ubah Depan" << endl;
-        cout << "5. Ubah Belakang" << endl;
-        cout << "6. Ubah Tengah" << endl;
-        cout << "7. Hapus Depan" << endl;
-        cout << "8. Hapus Belakang" << endl;
-        cout << "9. Hapus Tengah" << endl;
-        cout << "10. Hapus List" << endl;
-        cout << "11. TAMPILKAN" << endl;
-        cout << "0. KELUAR" << endl;
+        cout << "---------------------" << endl;
+        cout << "|   Tampilan Menu:  |" << endl;
+        cout << "---------------------" << endl;
+         cout <<"---------------------" << endl;
+        cout << "| 1. Tambah Depan   |" << endl;
+        cout << "| 2. Tambah Belakang|" << endl;
+        cout << "| 3. Tambah Tengah  |" << endl;
+        cout << "| 4. Ubah Depan     |"<< endl;
+        cout << "| 5. Ubah Belakang  |" << endl;
+        cout << "| 6. Ubah Tengah    |" << endl;
+        cout << "| 7. Hapus Depan    |" << endl;
+        cout << "| 8. Hapus Belakang |" << endl;
+        cout << "| 9. Hapus Tengah   |" << endl;
+        cout << "| 10. Hapus List    |" << endl;
+        cout << "| 11. TAMPILKAN     |" << endl;
+        cout << "| 0. KELUAR         |" << endl;
+         cout <<"--------------------- " << endl;
         cout << "Pilih Operasi: ";
         cin >> pilihan;
 
@@ -1123,97 +1126,97 @@ int main()
 
     return 0;
 }
+
 ```
 
-OUTPUT :
+## OUTPUT :
 
-TAMPILAN MENU :
-![Screenshot 2024-04-03 203400](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/f6998773-0467-440f-820a-434101d32536)
+## TAMPILAN MENU :
 
-TAMPILAN OPERASI TAMBAH :
+![Screenshot 2024-06-06 061801](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/b80ff646-9d06-42e4-bab7-97ef6a765b13)
 
-![Screenshot 2024-04-03 204930](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/2694a101-1c83-45da-a89f-4305c7ba6b92)
-![Screenshot 2024-04-03 210041](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/f35713bd-a4ea-4402-9b48-317dcfdace5e)
+## TAMPILAN OPERASI TAMBAH :
 
-TAMPILAN OPERASI HAPUS :
+![Screenshot 2024-06-06 061831](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/30c24e52-0907-4fae-b2b5-a64d62191ab6)
+![Screenshot 2024-06-06 062548](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/453606c0-f7f3-490f-b855-62f7fb3cf73d)
+![Screenshot 2024-06-06 064000](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/b990ecfe-c2c8-498d-8c4e-6730b876243c)
 
-![Screenshot 2024-04-03 210145](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/354aecc3-9cdf-4835-8106-91f85e213169)
-![Screenshot 2024-04-03 210244](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/d58d41b4-2039-441d-ac95-13702bf9dca5)
+## TAMPILAN OPERASI HAPUS :
 
-TAMPILAN OPERASI UBAH :
+![Screenshot 2024-06-06 062642](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/c37e3114-374b-4ccc-b521-377b97c14ecc)
+![Screenshot 2024-06-06 063208](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/3d13ef57-b12c-48f1-b178-fee53f2e827a)
 
-![Screenshot 2024-04-03 210316](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/ce1bde3d-d7e3-4050-9f5b-0c858e22ae57)
-![Screenshot 2024-04-03 210335](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/91cb8aab-92cc-4049-bf56-baa37c7cd1f5)
+## TAMPILAN OPERASI UBAH :
 
-TAMPILAN OPERASI TAMPIL DATA :
-
-![Screenshot 2024-04-03 210355](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/8e1a7c07-688b-45d9-b746-28a40fdc7169)
+![Screenshot 2024-06-06 062801](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/e6fd68ca-237f-4fd3-b052-ebb200d17bbb)
+![Screenshot 2024-06-06 062900](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/5e903118-f672-4880-92e5-88537c988318)
 
 
-NO 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu 
-tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
+## TAMPILAN OPERASI TAMPIL DATA :
 
-![Screenshot 2024-04-03 212113](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/0f03266f-ce71-4b8b-902a-3fe24bb08f87)
+![Screenshot 2024-06-06 063052](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/bfa8151e-53bd-4970-a03d-eb3c0030f336)
 
-NO 3. LAKUKAN PERINTAH BERIKUT 
+## NO 2.Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu
+## tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau
+## tengah)
 
-a) tampilkan data berikut diantara farel dan denis
+![Screenshot 2024-06-06 070224](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/30b67de8-d050-4133-aa5e-8964467c9cfe)
 
-![Screenshot 2024-04-03 212330](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/05a4a38e-e5d8-4b1a-b948-c88bc0714283)
+## NO 3. LAKUKAN PERINTAH BERIKUT 
 
-b) hapus data denis
+## a) tampilkan data berikut diantara farel dan denis
 
-![Screenshot 2024-04-03 212428](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/96eadd1c-02c7-40a1-9d98-225ecaa4d852)
+![Screenshot 2024-06-06 070651](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/69e10ce6-d97e-45f9-bc1b-37df24492d1d)
 
-c) tambah data berikut di awal
+## b) hapus data denis
 
-![Screenshot 2024-04-03 212509](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/72885d32-9c9e-4988-8176-6fa4c5006393)
+![Screenshot 2024-06-06 070728](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/b02db191-9d20-42fa-ad98-8ae2cd3e7274)
 
-d) tambah data berikut di akhir
+## c) tambah data berikut di awal
 
-![Screenshot 2024-04-03 212610](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/5e517e4f-89b0-44a4-b5a3-2f8bf338e8fe)
+![Screenshot 2024-06-06 070824](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/36b5a372-126d-45b0-87e6-1abe4082e59b)
 
-e) ubah data udin menjadi data berikut
+## d) tambah data berikut di akhir
 
-![Screenshot 2024-04-03 213339](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/70a0a30a-47a5-4993-bd80-977568e22443)
+![Screenshot 2024-06-06 070908](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/2957cfb1-d9bf-4740-9880-9eea0f9570cb)
 
-f) ubah data terakhir menjadi berikut
+## e) ubah data udin menjadi data berikut
 
-![Screenshot 2024-04-03 213354](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/1c484c45-4d07-4197-bf2b-0d19f6fdcf73)
+![Screenshot 2024-06-06 071320](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/c9693cbd-d4b3-47ee-bc13-221fadd1ee31)
 
-g) hapus data awal
+## f) ubah data terakhir menjadi berikut
 
-![Screenshot 2024-04-03 213404](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/3d5e31e6-9b98-457c-a4f3-e221703c9747)
+![Screenshot 2024-06-06 071414](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/d38af6c9-b57a-4c2d-8298-5d0de74a122c)
 
-h) ubah data awal menjadi berikut
+## g) hapus data awal
 
-![Screenshot 2024-04-03 213421](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/05f7a5b8-58fc-4473-84c4-b1785c99a3d6)
+![Screenshot 2024-06-06 071446](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/b489d1c5-04ed-4198-9118-e876eeba8a75)
 
-i) hapus data akhir
+## h) ubah data awal menjadi berikut
 
-![Screenshot 2024-04-03 213435](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/5d891a09-60a0-4104-8953-21686620ccf1)
+![Screenshot 2024-06-06 071548](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/7c8d7aab-e60b-4206-8565-6f95b9936e25)
 
-j) tampilkan seluruh data
+## i) hapus data akhir
 
-![Screenshot 2024-04-03 213453](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/5352fff0-53d6-497f-8bc4-4854e2c88b1b)
+![Screenshot 2024-06-06 071607](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/26f4c42f-2371-416a-9000-b48e7aa18184)
 
+## j) tampilkan seluruh data
 
-DESKRIPSI PROGRAM :
+![Screenshot 2024-06-06 071638](https://github.com/fajarfzmi/Struktur-Data-Assignment/assets/161665789/3179a612-b2f7-41c3-b87e-0cdb2e053d7a)
 
-Program di atas merupakan implementasi dari struktur data linked list dalam bahasa pemrograman C++. Linked list adalah struktur data linear yang terdiri dari
-serangkaian node yang setiap node-nya terdiri dari dua bagian, yaiti data dan alamat (pointer) yang menunjuk ke node berikutnya. Program ini 
-memungkinkan pengguna untuk melakukan berbagai operasi pada linked list seperti menambah, mengubah, dan menghapus node.
-Secara keseluruhan, program ini menyediakan implementasi dasar dari linked list tunggal dengan interaksi pengguna untuk mengelola list tersebut.
+## DESKRIPSI PROGRAM :
 
-KESIMPULAN :
+Program ini memungkinkan pengguna untuk menambahkan, mengubah, dan menghapus node dalam sebuah linked list serta menampilkan seluruh data yang ada dalam linked list. Menu interaktif memudahkan pengguna untuk berinteraksi dengan linked list.
+
+## KESIMPULAN :
 
 Linked List non circular adalah struktur data yang terdiri dari node denganpointer yang menunjuk ke node berikutnya, kecuali pada node terakhir yang
 menunjuk ke nilai null sebagai penanda akhir dari linked list. Sedangkan Linkedlist circular adalah struktur data yang digunakan yang terdiri dari 
 kumpulansimpul (node) yang terhubung dengan pointer yang saling terkait membentuk sirkuit. 
 
-referensi :
+## referensi :
 
-[1] Anita Sindar RMS, ST., M.TI CV. AA. RIZKY, 28 Nov 2019 - 109 halam.
+[1] RMS Anita Sindar - 2019 - books.google.com
 
-[2] Drozdek, A. (2005). Struktur data dan algoritma dalam C++. 
+[2] E Erkamim, I Abdurrohim, S Yuliyanti, R Karim… - 2024 - books.google.com
 
